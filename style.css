@@ -1,0 +1,222 @@
+body {
+  width: 100%;
+  min-width: 320px;
+  background-color: #f8f8f8;
+  font-family: TT Lakes;
+  font-weight: light;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 18px 16px;
+  background-color: white;
+  border-bottom: 1px solid #d9fff5;
+}
+.upper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner-container {
+  display: none;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 22px;
+  gap: 16px;
+}
+
+.upper-menu__container-1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.upper-menu__container-2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.upper-menu__container-2::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 32px;
+  background: #eaeaea;
+  border-radius: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2px;
+}
+
+main {
+  background: #f8f8f8;
+}
+
+.title {
+  display: flex;
+}
+
+h1 {
+  color: #1b1c21;
+  font-size: 28px;
+  line-height: 40px;
+  padding-left: 12px;
+}
+
+article {
+  color: #1b1c21;
+  max-height: 100px;
+  overflow: hidden;
+  padding: 0 16px;
+}
+
+.read-more {
+  display: flex;
+  padding-left: 16px;
+}
+
+.read-more__text {
+  font-weight: 500;
+  color: #1b1c21;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: flex-start;
+  overflow: scroll;
+  text-wrap: nowrap;
+  margin-left: 16px;
+  margin-bottom: 18px;
+  color: #7e7e82;
+}
+
+.menu-list__item--repairable-devices {
+  padding: 12px 16px;
+  background-color: white;
+  border: 2px solid #b8ffec;
+  border-radius: 4px;
+}
+
+.menu-list__item {
+  padding: 12px 16px;
+}
+
+.fade {
+  position: absolute;
+  right: 0;
+}
+
+.main-picture {
+  width: 320px;
+}
+
+@media (min-width: 532px) {
+  .inner-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 22px;
+    gap: 16px;
+  }
+
+  .upper-menu__logo-button {
+    position: relative;
+  }
+
+  .upper-menu__logo-button::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 32px;
+    background: #eaeaea;
+    border-radius: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -22px;
+  }
+
+  .upper-menu__container-1 {
+    gap: 42px;
+  }
+
+  .header {
+    padding: 18px 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  article {
+    padding: 0 24px;
+    min-width: 312px;
+    max-height: 150px;
+  }
+
+  .read-more {
+    padding-left: 24px;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .main-picture {
+    padding: 0 40px 40px 48px;
+    max-width: 360px;
+  }
+
+  .menu-list {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .menu-list {
+    flex-wrap: wrap;
+  }
+
+  article {
+    padding: 0 35px;
+    max-width: 490px;
+    max-height: 160px;
+  }
+
+  .menu-list {
+    margin-left: 35px;
+  }
+
+  .menu-list__item--repairable-brands {
+    padding: 12px 16px;
+    background-color: white;
+    border: 2px solid #b8ffec;
+    border-radius: 4px;
+  }
+
+  .menu-list__item--repairable-devices {
+    border: none;
+    background: none;
+  }
+
+  .main-picture {
+    padding: 0 40px 40px 48px;
+    min-width: 530px;
+  }
+
+  .header {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+  }
+
+  .upper-menu__container-2 {
+    visibility: visible;
+  }
+}
