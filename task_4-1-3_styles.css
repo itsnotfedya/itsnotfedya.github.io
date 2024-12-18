@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: TT Lakes;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  width: 320px;
+  height: 100vh;
+  color: #1b1c21;
+  box-shadow: 0 0 30px 0 #7e7e82;
+  letter-spacing: -0.2px;
+}
+
+a {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.global-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.global-container__upper-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px 46px 18px;
+}
+
+.global-container__upper-container--logo-img {
+  margin-right: auto;
+}
+
+.global-container__upper-container--x-button {
+  margin-right: 16px;
+}
+
+.global-container__main-content {
+  padding-left: 24px;
+  margin-bottom: auto;
+}
+
+.global-container__menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.global-container__menu-list li {
+  margin-bottom: 32px;
+}
+
+.global-container__menu-list--repair {
+  position: relative;
+}
+
+.global-container__menu-list--repair a {
+  color: #7e7e82;
+}
+
+.global-container__menu-list--repair::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 32px;
+  background: #41f6d7;
+  left: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.global-container__menu-list li:hover a {
+  color: #7e7e82;
+  font-style: italic;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.global-container__bottom-container {
+  margin-bottom: 32px;
+  padding-left: 24px;
+}
+
+.global-container__icon-buttons {
+  padding-bottom: 16px;
+}
+
+.global-container__icon-buttons a {
+  padding-right: 16px;
+}
+
+.global-container__bottom-container .global-container__e-mail {
+  padding-bottom: 12px;
+}
+
+.global-container__bottom-container .global-container__phone-number {
+  padding-bottom: 40px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+span {
+  padding-right: 7px;
+}
+
+.global-container__select-language--russian a {
+  color: #7e7e82;
+}
+
+.global-container__upper-container a:hover img,
+.global-container__icon-buttons a:hover img {
+  opacity: 0.8;
+}
+
+.global-container__select-language span:hover a {
+  color: #7e7e82;
+  font-style: italic;
+}
+
+.global-container__bottom-container .global-container__e-mail a:hover,
+.global-container__bottom-container .global-container__phone-number a:hover {
+  color: #7e7e82;
+  font-style: italic;
+}
