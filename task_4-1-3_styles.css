@@ -25,45 +25,45 @@ a {
   height: 100%;
 }
 
-.global-container__upper-container {
+.upper-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 24px 46px 18px;
 }
 
-.global-container__upper-container--logo-img {
+.upper-container__logo-img {
   margin-right: auto;
 }
 
-.global-container__upper-container--x-button {
+.upper-container__x-button {
   margin-right: 16px;
 }
 
-.global-container__main-content {
+.main-content {
   padding-left: 24px;
   margin-bottom: auto;
 }
 
-.global-container__menu-list {
+.main-content__menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.global-container__menu-list li {
+.main-content__menu-list li {
   margin-bottom: 32px;
 }
 
-.global-container__menu-list--repair {
+.main-content__menu-list--repair {
   position: relative;
 }
 
-.global-container__menu-list--repair a {
+.main-content__menu-list--repair a {
   color: #7e7e82;
 }
 
-.global-container__menu-list--repair::before {
+.main-content__menu-list--repair::before {
   position: absolute;
   content: "";
   width: 4px;
@@ -74,7 +74,7 @@ a {
   transform: translateY(-50%);
 }
 
-.global-container__menu-list li:hover a {
+.main-content__menu-list li:hover a {
   color: #7e7e82;
   font-style: italic;
 }
@@ -84,24 +84,24 @@ p {
   margin: 0;
 }
 
-.global-container__bottom-container {
+.bottom-container {
   margin-bottom: 32px;
   padding-left: 24px;
 }
 
-.global-container__icon-buttons {
+.bottom-container__icon-buttons {
   padding-bottom: 16px;
 }
 
-.global-container__icon-buttons a {
+.bottom-container__icon-buttons a {
   padding-right: 16px;
 }
 
-.global-container__bottom-container .global-container__e-mail {
+.bottom-container__e-mail {
   padding-bottom: 12px;
 }
 
-.global-container__bottom-container .global-container__phone-number {
+.bottom-container__phone-number {
   padding-bottom: 40px;
   line-height: 32px;
   letter-spacing: -0.6px;
@@ -113,22 +113,22 @@ span {
   padding-right: 7px;
 }
 
-.global-container__select-language--russian a {
+.bottom-container__select-language--russian a {
   color: #7e7e82;
 }
 
-.global-container__upper-container a:hover img,
-.global-container__icon-buttons a:hover img {
+.upper-container a:hover img,
+.bottom-container__icon-buttons a:hover img {
   opacity: 0.8;
 }
 
-.global-container__select-language span:hover a {
+.bottom-container__select-language span:hover a {
   color: #7e7e82;
   font-style: italic;
 }
 
-.global-container__bottom-container .global-container__e-mail a:hover,
-.global-container__bottom-container .global-container__phone-number a:hover {
+.bottom-container__e-mail a:hover,
+.bottom-container__phone-number a:hover {
   color: #7e7e82;
   font-style: italic;
 }
