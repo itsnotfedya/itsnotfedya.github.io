@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: TT Lakes;
+  font-size: 16;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7e7e82;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #fcfcfc;
+  padding: 16px 24px 16px 24px;
+  border-top: 1px solid #d9fff5;
+}
+
+img {
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 24px;
+}
+
+.grid-container .swiper-slide-copy {
+  background-color: #ffffff;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  vertical-align: middle;
+}
+
+.grid-container .swiper-slide-copy:nth-child(-n + 6) {
+  display: flex;
+}
+
+.show-more-wrapper {
+  padding-left: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #7e7e82;
+}
+
+.show-more {
+  color: #1b1c21;
+  font-weight: 500;
+}
+
+.fade {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  z-index: 1;
+}
+
+.show-more-wrapper {
+  display: none;
+}
+
+.swiper-slide-copy {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+
+.swiper-wrapper-copy {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 43px;
+}
+
+.swiper-pagination {
+  --swiper-pagination-color: #979797;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .show-more-wrapper {
+    padding-left: 32px;
+    display: flex;
+  }
+
+  .fade {
+    display: none;
+  }
+
+  .swiper-copy {
+    padding-right: 48px;
+  }
+
+  .swiper-wrapper-copy {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 32px;
+  }
+
+  header {
+    padding: 16px 32px 16px 32px;
+  }
+
+  .show-more-wrapper {
+    padding-left: 32px;
+    display: flex;
+  }
+
+  .swiper-copy {
+    padding-right: 64px;
+  }
+
+  .swiper-wrapper-copy {
+    margin-top: 24px;
+    margin-left: 32px;
+    margin-bottom: 24px;
+  }
+
+  .grid-container .swiper-slide-copy:nth-child(-n + 8) {
+    display: flex;
+  }
+}

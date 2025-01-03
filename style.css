@@ -1,0 +1,381 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  background-color: #f8f8f8;
+  font-family: TT Lakes;
+  font-weight: light;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;        
+}
+
+img {
+  display: block;
+}
+
+header {
+  padding: 18px 16px;
+  background-color: white;
+  border-bottom: 1px solid #d9fff5;
+}
+.upper-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-wrapper {
+  background: #ff3e79;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upper-menu__between {
+  display: none;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 22px;
+  gap: 16px;
+}
+
+.upper-menu__right-side--text {
+  display: none;
+}
+
+.upper-menu__repair-button,
+.upper-menu__search-button {
+  text-decoration: none;
+  color: #1b1c21;
+  font-weight: 500;
+}
+
+.upper-menu__icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.upper-menu__left-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.upper-menu__right-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.upper-menu__right-side::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 32px;
+  background: #eaeaea;
+  border-radius: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -2px;
+}
+
+.title {
+  display: flex;
+}
+
+h1 {
+  color: #1b1c21;
+  font-size: 28px;
+  line-height: 40px;
+  padding-left: 12px;
+}
+
+.content__article {
+  color: #1b1c21;
+  overflow: hidden;
+  padding: 0 16px;
+  height: 100px;
+}
+
+.content__read-more {
+  display: flex;
+  padding-left: 16px;
+  font-weight: 500;
+  color: #1b1c21;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: flex-start;
+  overflow: scroll;
+  text-wrap: nowrap;
+  margin-left: 16px;
+  margin-bottom: 18px;
+  color: #7e7e82;
+}
+
+.menu-list__item--repairable-devices {
+  background-color: white;
+  border: 2px solid #b8ffec;
+}
+
+.menu-list__item {
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.menu-list__fade {
+  position: absolute;
+  right: 0;
+}
+
+.content__main-picture {
+  width: 320px;
+  margin-bottom: 32px;
+}
+
+.header {
+  background-color: #fcfcfc;
+  padding: 16px 24px 16px 24px;
+  border-top: 1px solid #d9fff5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 24px;
+}
+
+.grid-container .swiper-slide-copy {
+  background-color: #ffffff;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  vertical-align: middle;
+}
+
+.grid-container .swiper-slide-copy:nth-child(-n + 6) {
+  display: flex;
+}
+
+.show-more-wrapper {
+  padding-left: 24px;
+}
+
+.show-more {
+  color: #1b1c21;
+  font-weight: 500;
+}
+
+.fade {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  z-index: 1;
+}
+
+.show-more-wrapper {
+  display: none;
+}
+
+.swiper-slide-copy {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+
+.swiper-wrapper-copy {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-bottom: 43px;
+}
+
+.swiper-pagination {
+  --swiper-pagination-color: #979797;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+@media (min-width: 532px) {
+  .upper-menu__between {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 22px;
+    gap: 16px;
+  }
+
+  .upper-menu__logo-button {
+    position: relative;
+  }
+
+  .upper-menu__logo-button::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 32px;
+    background: #eaeaea;
+    border-radius: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -22px;
+  }
+
+  .upper-menu__left-side {
+    gap: 42px;
+  }
+
+  header {
+    padding: 18px 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content__article {
+    padding: 0 24px;
+    min-width: 312px;
+    height: 150px;
+  }
+
+  .content__read-more {
+    padding-left: 24px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .content__main-picture {
+    padding: 0 40px 40px 48px;
+    max-width: 360px;
+  }
+
+  .menu-list {
+    margin-left: 24px;
+  }
+
+  .show-more-wrapper {
+    padding-left: 32px;
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  .fade {
+    display: none;
+  }
+
+  .swiper-copy {
+    padding-right: 48px;
+  }
+
+  .swiper-wrapper-copy {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .menu-list {
+    flex-wrap: wrap;
+  }
+
+  .content__article {
+    padding: 0 35px;
+    max-width: 490px;
+    height: 160px;
+  }
+
+  .menu-list {
+    margin-left: 35px;
+  }
+
+  .menu-list__item--repairable-brands {
+    background-color: white;
+    border: 2px solid #b8ffec;
+  }
+
+  .menu-list__item--repairable-devices {
+    border: none;
+    background: none;
+  }
+
+  .content__main-picture {
+    padding: 0 40px 40px 48px;
+    min-width: 530px;
+  }
+
+  header {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+  }
+
+  .upper-menu__right-side {
+    visibility: visible;
+  }
+
+  .upper-menu__right-side--text {
+    display: block;
+  }
+
+  .upper-menu__right-side::after {
+    display: none;
+  }
+
+  .upper-menu__right-side {
+    gap: 32px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 32px;
+  }
+
+  header {
+    padding: 16px 32px 16px 32px;
+  }
+
+  .show-more-wrapper {
+    padding-left: 32px;
+    display: flex;
+  }
+
+  .swiper-copy {
+    padding-right: 64px;
+  }
+
+  .swiper-wrapper-copy {
+    margin-top: 24px;
+    margin-left: 32px;
+    margin-bottom: 24px;
+  }
+
+  .grid-container .swiper-slide-copy:nth-child(-n + 8) {
+    display: flex;
+  }
+}
